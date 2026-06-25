@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --border-color: #000000;
+    --card-bg: whitesmoke;
+    --color: #000000;
+    --quote: #808080;
+}
+
+:root.dark {
+    --bg-color: #2F4F4F;
+    --color: #F0FFFF;
+    --border-color: #F0FFFF;
+    --card-bg: #3A5A5A;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+h1 {font-size: 3rem; font-style: italic;}
+p {font-size: 2rem; font-style: italic;}
+a {text-decoration: none; font-size: 1rem;}
+li {list-style-type: none;}
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+
+.header__logo {
+    margin: 1.5rem 0;
+    p {
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: normal;
+    }
+}
+
+#header__navbar ul li {
+    display: inline;
+    padding: 0 1rem;
+    
+    a {
+        text-decoration: none;
+        color: var(--color);
+        font-size: 1.5rem;
+    }
+}
+
+#main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.maininfo__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#maininfo > article {
+    border: 2px solid var(--border-color);
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+}
+
+#maininfo > article h2 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.maininfo__projects__card__title,
+.maininfo__experience__card__title {
+    padding: 10px;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.maininfo__projects__card__prof li {
+    padding: 10px;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+}
+.maininfo__experience__card__about {
+    text-align: left;
+    padding: 15px 20px;
+    background-color: whitesmoke;
+    h3 {
+        font-size: 2rem;
+        font-style: italic;
+    }
+    p, a {
+        font-size: 1.5rem;
+        font-style: normal;
+    }
+}
+.maininfo__experience__card__about > * {
+    padding: 10px 0;
+}
+
+.maininfo__education__card__title {
+    border-bottom: none;
+    h2 {
+        font-size: 2rem;
+        padding: 1rem 0 1.5rem 0;
+    }
+    p {
+        font-size: 1.5rem;
+        font-style: normal;
+        padding-left: 2rem;
+        text-align: left;
+    }
+}
+
+.maininfo__education__card__courses {
+    font-size: 1.5rem;
+    border-top: none;
+    text-align: left;
+    padding: 2rem 2rem;
+    p {
+        font-style: normal;
+        padding-bottom: 0.5rem;
+    }
+    ul{
+        padding-left: 1rem;
+    }
+}
+
+#reviews {
+    border: 2px solid black;
+    padding: 2rem 4rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.reviews__title {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.reviews__card {
+    border: 4px solid #000000;
+    border-radius: 50px;
+    padding: 2rem;
+    p {
+        font-size: 1.5rem;
+        font-style: normal;
+    }
+}
+
+.reviews__card--maintext {
+    padding-bottom: 1rem;
+}
+
+.reviews__card--signature {
+    color: var(--quote);
+}
+
+footer {
+    padding: 2rem 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #header__navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    #maininfo > article {
+        flex: 1;
+    }
+    .maininfo__container {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .container {
+        flex-direction: row;
+    }
+}

@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alkarim Saliyev — Junior Frontend Developer. Portfolio homepage.">
     <meta name="author" content="Alkarim Saliyev">
+    <link rel="stylesheet" href="style.css">
     <title>Homepage - Alkarim Saliyev</title>
 </head>
 <body>
     <header id="header">
         <div class="header__logo">
-                <img src="" alt="">
-                <p>Alkarim Saliyev</p>
-            </div>
+            <p>Alkarim Saliyev</p>
+        </div>
         <nav id="header__navbar">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
@@ -23,81 +23,93 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         
         <section id="home">
             <h1>Frontend Developer</h1>
             <p>html only with proper layout, no styling</p>
         </section>
 
-        <section id="projects">
-            <article class="projects__card">
-                <h2>Projects</h2>
-                <ul>
-                    <li>HTML Only Portfolio</li>
-                    <li>Calculator</li>
-                    <li>Quiz App</li>
-                    <li>Countdown Timer</li>
-                    <li>Product Upcoming Page</li>
-                </ul>
-            </article>
+        <section id="maininfo">
+            <article class="maininfo__container">
+                <article class="maininfo__projects__card">
+                    <h2 class="maininfo__projects__card__title">Projects</h2>
+                    <ul class="maininfo__projects__card__prof">
+                        <li>HTML Only Portfolio</li>
+                        <li>Calculator</li>
+                        <li>Quiz App</li>
+                        <li>Countdown Timer</li>
+                        <li>Product Upcoming Page</li>
+                    </ul>
+                </article>
 
-            <article class="projects__card">
-                <div class="projects__card__prof">
-                    <h2>Work Experience</h2>
-                    <p>roadmap.sh <br> Solved all the frontend projects</p>
-                    <a href="https://roadmap.sh/u/herstak">Visit my Profile</a>
-                </div>
-                <div class="projects__card__opensource">
-                    <h2>OpenSource Work</h2>
-                    <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
-                    <a href="https://github.com/Herstak">Visit my GitHub Profile</a>
-                </div>
-            </article>
+                <article class="maininfo__experience__card">
+                    <div class="maininfo__experience__card__title">
+                        <h2>Work Experience</h2>
+                    </div>
+                    <div class="maininfo__experience__card__about">
+                        <h3>roadmap.sh</h3>
+                        <p>Solved all the frontend projects</p>
+                        <a href="https://roadmap.sh/u/herstak">Visit my Profile</a>
+                    </div>
+                    <div class="maininfo__experience__card__about">
+                        <h3>OpenSource Work</h3>
+                        <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                        <a href="https://github.com/Herstak">Visit my GitHub Profile</a>
+                    </div>
+                </article>
 
-            <article class="projects__card">
-                <h2>Education</h2>
-                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions. <br> Courses I took: <br></p>
-                <ul>
-                    <li>Object Oriented Programming</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Web Engineering</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Human Computer Interaction</li>
-                    <li>Computer Graphics</li>
-                    <li>Database Management Systems</li>
-                    <li>Distributed Database Systems</li>
-                    <li>Discreet Mathematics</li>
-                </ul>
-            </article>
-        </section>
+                <article class="maininfo__education__card">
+                    <div class="maininfo__education__card__title">
+                        <h2>Education</h2>
+                        <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                    </div>
+                    <div class="maininfo__education__card__courses">
+                        <p>Courses I took: </p>
+                        <ul>
+                            <li>Object Oriented Programming</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Web Engineering</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Human Computer Interaction</li>
+                            <li>Computer Graphics</li>
+                            <li>Database Management Systems</li>
+                            <li>Distributed Database Systems</li>
+                            <li>Discreet Mathematics</li>
+                        </ul>
+                    </div> 
+                </article>
+            </section>
 
-        <section id="reviews">
-            <article class="reviews__title">
-                <h2>Reviews from my Teachers</h2>
-            </article>
-            <article class="reviews__card">
-                <div class="reviews__card--maintext">
-                    <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-                </div>
-                <div class="reviews__card--signature">
-                    <p>Jane Doe <br> Assistant Professor</p>
-                </div>
-            </article>
-            <article class="reviews__card">
-                <div class="reviews__card--maintext">
-                    <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-                </div>
-                <div class="reviews__card--signature">
-                    <p>Jane Doe <br> Assistant Professor</p>
-                </div>
-            </article>
-            <article class="reviews__card">
-                <div class="reviews__card--maintext">
-                    <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-                </div>
-                <div class="reviews__card--signature">
-                    <p>Jane Doe <br> Assistant Professor</p>
+            <section id="reviews">
+                <article class="reviews__title">
+                    <h2>Reviews from my Teachers</h2>
+                </article>
+                <div class="container">
+                    <article class="reviews__card">
+                        <div class="reviews__card--maintext">
+                            <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                        </div>
+                        <div class="reviews__card--signature">
+                            <p>Jane Doe <br> Assistant Professor</p>
+                        </div>
+                    </article>
+                    <article class="reviews__card">
+                        <div class="reviews__card--maintext">
+                            <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                        </div>
+                        <div class="reviews__card--signature">
+                            <p>Jane Doe <br> Assistant Professor</p>
+                        </div>
+                    </article>
+                    <article class="reviews__card">
+                        <div class="reviews__card--maintext">
+                            <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                        </div>
+                        <div class="reviews__card--signature">
+                            <p>Jane Doe <br> Assistant Professor</p>
+                        </div>
+                    </article>
                 </div>
             </article>
         </section>
